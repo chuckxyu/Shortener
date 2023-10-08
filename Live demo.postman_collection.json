@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "1e55a34a-6670-43f8-b8d4-1f26c7fc8df0",
+		"name": "Live demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1170660"
+	},
+	"item": [
+		{
+			"name": "[LIVE] Shorten an URL",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"originalUrl\":\"https://example.com\"}"
+				},
+				"url": {
+					"raw": "http://164.92.78.250:8080/shorten",
+					"protocol": "http",
+					"host": [
+						"164",
+						"92",
+						"78",
+						"250"
+					],
+					"port": "8080",
+					"path": [
+						"shorten"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[LIVE] Retrieve original URL",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"originalUrl\":\"https://example.com\"}"
+				},
+				"url": {
+					"raw": "http://164.92.78.250:8080/eyJvcm",
+					"protocol": "http",
+					"host": [
+						"164",
+						"92",
+						"78",
+						"250"
+					],
+					"port": "8080",
+					"path": [
+						"eyJvcm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Local] Shorten an url",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"originalUrl\":\"https://example.com\"}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/shorten",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"shorten"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[Local] Retrieve original URL",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/eyJvcm",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eyJvcm"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
